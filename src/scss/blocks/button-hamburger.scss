@@ -1,0 +1,17 @@
+.button-hamburger {
+	background-repeat: no-repeat;
+	background-color: transparent;
+	border: none;
+	outline: none;	
+    padding: 0;
+	@media (min-width: $screen-xs) {
+		width: 25px;
+		height: 24px;
+		background-image: url(../img/hamburger.png);		
+	}
+	@media (min-width: $screen-sm) {
+		width: 30px;
+		height: 29px;
+		background-image: url(../img/hamburger_sm.png);		
+	}
+}

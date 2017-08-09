@@ -1,0 +1,12 @@
+.about {
+	@media (min-width: $screen-xs) {
+		.video {
+			display: none;
+		}
+	}
+	@media (min-width: $screen-sm) {
+		.video {
+			display: block;
+		}
+	}
+}

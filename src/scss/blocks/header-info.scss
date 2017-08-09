@@ -1,0 +1,51 @@
+.header-info {
+	width: 100%;
+	@media (min-width: $screen-xs) {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		.main-menu {
+			display: none;
+		}
+		.hamburger-menu {
+			//display: none;
+		}
+		.button-cross {
+			
+			
+		}
+		.button-hamburger {
+			display: flex;
+			margin: 12px 21px 11px 11px;
+		}
+		.logo {
+			display: flex;
+			margin: 14px 14px 14px 21px;
+		}
+	}
+	@media (min-width: $screen-sm) {
+		.button-hamburger {			
+			margin: 20px 21px 20px 11px;
+		}
+		.logo {			
+			margin: 22px 14px 22px 21px;
+		}
+	}
+	@media (min-width: $screen-lg) {
+		.main-menu {
+			display: inline-flex;
+		}
+		.button-hamburger {
+			display: none;
+		}
+		.button-cross {
+			display: none;
+		}
+		.hamburger-menu {
+			display: none;
+		}
+		.logo {			
+			margin: 22px 14px 22px 26px;
+		}
+	}
+}

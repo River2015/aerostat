@@ -1,3 +1,20 @@
-.page-header {
-  color: $text-color;
+.page-header {		
+	background-color: $background-color-bl;
+	@media (min-width: $screen-xs) {
+		position: absolute;
+    	width: 100%;
+    	bottom: 502px;
+    	z-index: 4;
+	}
+	@media (min-width: $screen-sm) {
+		position: static;
+    	background-size: cover;
+    	
+    	;
+	}
+	
+	
+
+
+	
 }

@@ -1,14 +1,22 @@
-// Это диспетчер подключений, тут не должно быть ничего, кроме импортов
 
-// Глобальные подключения
 @import 'variables.scss';
 @import 'global.scss';
 @import 'fonts.scss';
 
-// Это импорт файла с примесями для растровых спрайтов. Используете растровые спрайты — раскомментить,
-// посмотреть контент. Найти примеси, выводящие свойства спрайтов и вызвать эти примеси в нужных вам
-// местах. При «тупом» использовании — вызвать примесь, генерирующую все css-правила спрайта.
-// @import 'sprite.scss';
 
-// БЭМ-блоки. Один БЭМ-блок = 1 файл
+@import 'blocks/aerostat.scss';
 @import 'blocks/page-header.scss';
+@import 'blocks/header-info.scss';
+@import 'blocks/logo.scss';
+@import 'blocks/button-hamburger.scss';
+@import 'blocks/button-cross.scss';
+@import 'blocks/main-menu.scss';
+@import 'blocks/hamburger-menu.scss';
+@import 'blocks/about.scss';
+@import 'blocks/page-footer.scss';
+@import 'blocks/footer-info.scss';
+@import 'blocks/scroll.scss';
+
+
+@import 'blocks/comments-item.scss';
+

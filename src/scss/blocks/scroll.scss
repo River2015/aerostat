@@ -1,0 +1,15 @@
+.scroll {
+	transform: rotate(45deg);
+	@media (min-width: $screen-xs) {
+		width: 18px;
+		height: 18px;
+		border-left: 5px solid $text-color-w;
+		border-top: 5px solid $text-color-w;
+	}
+	@media (min-width: $screen-sm) {
+		width: 23px;
+		height: 23px;
+		border-left: 7px solid $text-color-w;
+		border-top: 7px solid $text-color-w;
+	}
+}

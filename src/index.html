@@ -2,102 +2,98 @@
 <html lang="ru" class="no-js">
 <head>
   @@include('_include/page-head.html')
-  <title>Document</title>
+  <title>Aerostat</title>
 </head>
 <body>
-  <!-- Это включение в разметку SVG-спрайта и пример его использования -->
-  <!-- @@include('img/sprite-svg.svg') -->
-  <!-- <svg width="24" height="24"><use xlink:href="#loupe"></use></svg> -->
-  <!-- <svg width="24" height="24"><use xlink:href="#rgb"></use></svg> -->
-  <!-- <svg width="24" height="24"><use xlink:href="#tea-cup"></use></svg> -->
-
-
-  <!-- Это примеры использования растрового спрайта -->
-  <!--
-  <div class="chrome"></div>
-  <div class="github-logo"></div>
-  <div class="kraken"></div>
-  <div class="male-and-female"></div>
-  <div class="musica-searcher"></div>
-  <div class="placeholder"></div>
-  -->
-
+  
  <header class="page-header">
    <div class="container">
-     <p class="page-header__logo">Монгольфьеркин и КО</p>
+    <div class="header-info">
+     <p id='up' class="logo">Монгольфьеркин и КО</p>
      <button class="button-hamburger"></button>
+     <button class="button-cross">
+       <div class="button-cross__line button-cross__line--left"></div>
+       <div class="button-cross__line button-cross__line--right"></div>
+     </button>
      <nav class="hamburger-menu">
-       <ul class="hamburger-menu__list">
+        <ul class="hamburger-menu__list">
          <li class="hamburger-menu__item">
           <a href="#" class="hamburger-menu__link">Кто мы</a>
          </li>
          <li class="hamburger-menu__item">
-          <a href="#" class="hamburger-menu__link">Фотографии</a>
+          <a href="#gallery" class="hamburger-menu__link">Фотографии</a>
          </li>
          <li class="hamburger-menu__item">
-          <a href="#" class="hamburger-menu__link">План полета</a>
+          <a href="#flights" class="hamburger-menu__link">План полета</a>
          </li>
          <li class="hamburger-menu__item">
-          <a href="#" class="hamburger-menu__link">Заказать</a>
+          <a href="#buy" class="hamburger-menu__link">Заказать</a>
          </li>
          <li class="hamburger-menu__item">
-          <a href="#" class="hamburger-menu__link">Команда</a>
+          <a href="#team" class="hamburger-menu__link">Команда</a>
          </li>
          <li class="hamburger-menu__item">
-          <a href="#" class="hamburger-menu__link">Контакты</a>
+          <a href="#contacts" class="hamburger-menu__link">Контакты</a>
          </li>
        </ul>
      </nav>
      <nav class="main-menu head-menu">
-       <ul class="head-menu__list">
-         <li class="head-menu__item">
-            <a href="#" class="head-menu__link">Кто мы</a>
+       <ul class="main-menu__list">
+         <li class="main-menu__item">
+            <a href="#" class="main-menu__link">Кто мы</a>
          </li>
-         <li class="head-menu__item">
-            <a href="#" class="head-menu__link">Фотографии</a>
+         <li class="main-menu__item">
+            <a href="#gallery" class="main-menu__link">Фотографии</a>
          </li>
-         <li class="head-menu__item">
-            <a href="#" class="head-menu__link">План полета</a>
+         <li class="main-menu__item">
+            <a href="#flights" class="main-menu__link">План полета</a>
          </li>
-         <li class="head-menu__item">
-            <a href="#" class="head-menu__link">Заказать</a>
+         <li class="main-menu__item">
+            <a href="#buy" class="main-menu__link">Заказать</a>
          </li>
-         <li class="head-menu__item">
-            <a href="#" class="head-menu__link">Команда</a>
+         <li class="main-menu__item">
+            <a href="#team" class="main-menu__link">Команда</a>
          </li>
-         <li class="head-menu__item">
-            <a href="#" class="head-menu__link">Контакты</a>
+         <li class="main-menu__item">
+            <a href="#contacts" class="main-menu__link">Контакты</a>
          </li>
        </ul>
      </nav>
+    </div>
    </div>
  </header>
-  <section class="introduction">
+  <section class="promo">
     <div class="aerostat">
       <div class="container">
-        <h1 class="aerostat__title">Организация полетов на воздушных шарах</h1>
-        <p class="aerostat__text">Удивительный опыт</p>
-        <p class="aerostat__text">Увлекательная экскурсия</p>
-        <p class="aerostat__text">Запоминающейся подарок</p>
-        <p class="aerostat__text">Романтическая прогулка</p>
+        <h1 class="aerostat__title title">Организация полетов на воздушных шарах</h1>
+        <p class="aerostat__text aerostat__text--expiriens">Восхитительный опыт</p>
+        <p class="aerostat__text aerostat__text--expression">Удивительный опыт</p>
+        <p class="aerostat__text aerostat__text--excursion">Увлекательная экскурсия</p>
+        <p class="aerostat__text aerostat__text--gift">Запоминающейся подарок</p>
+        <p class="aerostat__text aerostat__text--walk">Романтическая прогулка</p>
         <a href="" class="aerostat__link">Подробнее</a>
+        <a href="" class="aerostat__down">
+          <div class="aerostat__row">
+            <div class="vertical"></div>
+            <div class="corner"></div>
+          </div></a>
       </div>
     </div>
-    <div class="aerostat-advantages">
-      <p class="aerostat-advantages__item">Современный надежный шар</p>
-      <p class="aerostat-advantages__item">Обучение пилотированию</p>
-      <p class="aerostat-advantages__item">Фотосъемка в полете</p>
-      <p class="aerostat-advantages__item">Потрясающие виды</p>
+    <div class="advantages">
+      <p class="advantages__item">Современный надежный шар</p>
+      <p class="advantages__item">Обучение пилотированию</p>
+      <p class="advantages__item">Фотосъемка в полете</p>
+      <p class="advantages__item">Потрясающие виды</p>
     </div>
   </section>
   <section class="about">
-    <h2 class="about__title">Вкратце</h2>
+    <h2 class="about__title title">Вкратце</h2>
     <p class="about__text">Более 5 лет воздухоплавательная команда Нева-Аэро выполняет полеты на воздущных шарах для гостей и жителей Санкт-Петербурга над одним из самых живописных мест России - Царским селом и Павловском, возведенных в Пушкинском районе Санкт-Петербурга. <span> Мы предлагаем полететь с нами</span></p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/QgpB10STlbc" frameborder="0" allowfullscreen></iframe>
+    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/QgpB10STlbc" frameborder="0" allowfullscreen></iframe>
   </section>
   <section class="gallery">
     <div class="container">
-      <h2 class="gallery__title title">Галерея</h2>
+      <h2 id='gallery' class="gallery__title title">Галерея</h2>
       <div class="ananas">
         <div class="gallery-item">
           <img src="img/Gallery_img1.jpg" alt="gallery_in_sky" class="galary__img">
@@ -124,7 +120,7 @@
   </section>
   <section class="flights">
     <div class="container">
-      <h2 class="flights__title">Как проходят полеты</h2>
+      <h2 id='flights' class="flights__title">Как проходят полеты</h2>
     </div>
     <div class="flights__wrapper">
       <div class="flights__inner">
@@ -140,7 +136,7 @@
   <section class="price">
     <div class="container">
       <div class="price__description">
-        <h2 class="price__title title">Расчитать стоимость</h2>
+        <h2 id='buy' class="price__title title">Расчитать стоимость</h2>
         <p class="price_text">Итак, в назначенное время вы приехали на место полета. Команда уже готовит шар к полету- опеделяется направление верта, запускаются горелки.</p>
         <p class="price_text">Оболочка начинает заполняться теплым воздухом, и аэростот делает первый вздох.</p>
         <p class="price_text">Выбирайте, куда мы полетим сегодня!</p>
@@ -239,8 +235,9 @@
       </div>
     </div>
   </section>
-  <section class="team">
+  <section id='team' class="team">
     <div class="container">
+      <h2 class="team__title title">Команда инструкторов</h2>
       <div class="team-item">
         <div class="team-item__inner"><img src="img/team_mariam.jpg" alt="chif_pilot_maria_marieva" class="team-item__img"></div>
         <p class="tem-item__name">Мария Мариева</p>
@@ -282,27 +279,27 @@
       </div>
     </div>
   </section>
-  <footer class="page-footer">
+  <section id='contacts' class="contacts">
     <div class="container">
-      <div class="airport-info">
-        <p class="airport-info__text">Запишите адрес аэропорта</p>
-        <p class="airport-info__adress">Всеволжск, улица Аэродромная 19а</p>
+      <div class="airport-contacts">
+        <p class="airport-contacts__text">Запишите адрес аэропорта</p>
+        <p class="airport-contacts__adress">Всеволжск, улица Аэродромная 19а</p>
       </div>
-      <div class="adress-info">
-        <p class="adress-info__text">Наш офис в Питере:</p>
-        <p class="adress-info__adress">Литейный 14Б</p>
-        <p class="adress-info__time">12:00 - 19:00</p>
-        <p class="adress-info__adress">746-67-33</p>
+      <div class="adress-contacts">
+        <p class="adress-contacts__text">Наш офис в Питере:</p>
+        <p class="adress-contacts__adress">Литейный 14Б</p>
+        <p class="adress-contacts__time">12:00 - 19:00</p>
+        <p class="adress-contacts__adress">746-67-33</p>
       </div> 
-      <div class="adress-info">
-        <p class="adress-info__text">Наш офис во Всеволожске:</p>
-        <p class="adress-info__adress">Аэродромная 19А</p>
-        <p class="adress-info__time">12:00 - 19:00</p>
-        <p class="adress-info__phone">746-67-33</p>
+      <div class="adress-contacts">
+        <p class="adress-contacts__text">Наш офис во Всеволожске:</p>
+        <p class="adress-contacts__adress">Аэродромная 19А</p>
+        <p class="adress-contacts__time">12:00 - 19:00</p>
+        <p class="adress-contacts__phone">746-67-33</p>
       </div>     
-      <div class="mail-info">
+      <div class="mail-contacts">
         <a href="mailto:mnebyvnebo@gmail.com" class="mail-info__link">mnebyvnebo@gmail.com</a>
-        <ul class="mail-info__social social">
+        <ul class="mail-contacts__social social">
           <li class="social__item">
             <a href="https://vk.com" class="social__link">           
               <i class="sprite vk"></i>
@@ -320,38 +317,45 @@
           </li>
         </ul>
       </div>
-    </div>
-    <div class="copyright">
-      <div class="container">
-        <p class="page-header__logo">Монгольфьеркин и КО</p>    
-        <nav class="main-menu footer-menu">
-         <ul class="footer-menu__list">
-           <li class="footer-menu__item">
-              <a href="#" class="footer-menu__link">Кто мы</a>
-           </li>
-           <li class="footer-menu__item">
-              <a href="#" class="footer-menu__link">Фотографии</a>
-           </li>
-           <li class="footer-menu__item">
-              <a href="#" class="footer-menu__link">План полета</a>
-           </li>
-           <li class="footer-menu__item">
-              <a href="#" class="footer-menu__link">Заказать</a>
-           </li>
-           <li class="footer-menu__item">
-              <a href="#" class="footer-menu__link">Команда</a>
-           </li>
-           <li class="footer-menu__item">
-              <a href="#" class="footer-menu__link">Контакты</a>
-           </li>
-         </ul>
-        </nav>
-        <div class="scroll__row"></div>
-        <div class="scroll__row"></div>
       </div>
-    </div>
- 
-  </footer>
+    </section>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="footer-info">
+          <p class="logo">Монгольфьеркин и КО</p>    
+          <nav class="main-menu footer-menu">
+           <ul class="main-menu__list">
+             <li class="main-menu__item">
+                <a href="#" class="main-menu__link">Кто мы</a>
+             </li>
+             <li class="main-menu__item">
+                <a href="#" class="main-menu__link">Фотографии</a>
+             </li>
+             <li class="main-menu__item">
+                <a href="#" class="main-menu__link">План полета</a>
+             </li>
+             <li class="main-menu__item">
+                <a href="#" class="main-menu__link">Заказать</a>
+             </li>
+             <li class="main-menu__item">
+                <a href="#" class="main-menu__link">Команда</a>
+             </li>
+             <li class="main-menu__item">
+                <a href="#" class="main-menu__link">Контакты</a>
+             </li>
+           </ul>
+          </nav>
+          <div class="up">
+            <a href="#up" class="up__link">
+              <div class="scroll"></div>
+            </a>
+          </div>
+          
+        </div>  
+      </div>
+    </footer>
+
+<script src="js/script.min.js"></script>
 </body>
 </html>
   </section>
