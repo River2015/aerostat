@@ -4,8 +4,10 @@ $screen-md:                   992px;
 $screen-lg:                   1200px;
 $screen-xl:                   1920px;
 
-$text-color:                  #000;
-$text-color-w:                #fff;
+$text-color:                  #666666; //цвет темного шрифта на сайте
+$text-color-ad:               #444444; //цвет темных заголовков блока эдвантеджес
+$text-color-w:                #fff;    //цвет светлого шрифта на сайте
+
 $background-color-bl:         #2c2c2c; //фон футера и хеадера//
 $background-color-h:          #ebebeb; //фон кнопки гамбургер//
 $background-color-up:         #e3e3e3; //фон кнопки скрола//

@@ -1,0 +1,127 @@
+.advantages {
+	@media (min-width: $screen-xs) {
+		&__inner {
+			display: block;		
+			width: 310px;
+			margin: auto;
+			margin-top: 55px;
+		}
+		.advantages-item {
+			font-size: $font-size + 4px;
+			color: $text-color-ad;
+			padding-left: 47px;
+			padding-bottom: 15px;
+			position: relative;
+		}
+		.advantages-item:before {
+			content: '';		
+			background-repeat: no-repeat;
+			width: 40px;
+			height: 40px;
+			position: absolute;    	
+		}
+		.advantages-item--hand:before {
+			background-image: url(../img/hand.png);
+			background-size: 80%;
+			left: -2px;
+	    	top: -11px;
+		}
+		.advantages-item--glasses:before {
+			background-image: url(../img/glasses.png);
+			background-size: 90%;
+			left: -2px;
+	    	top: 4px;
+		}
+		.advantages-item--camera:before {
+			background-image: url(../img/camera.png);
+			background-size: 87%;
+			left: -2px;
+	    	top: -6px;
+		}
+		.advantages-item--veiw:before {
+			background-image: url(../img/binoculars.png);
+			background-size: 90%;
+			left: -2px;
+	    	top: 2px;
+		}
+	}
+	@media (min-width: $screen-sm) {
+		&__inner {
+		display: flex;
+		flex-wrap: wrap;	
+		width: 751px;
+		align-content: center;		
+		}
+		.advantages-item {			
+			padding-left: 96px;			
+			width: 37%;
+			display: inline-flex;
+		}
+		.advantages-item:before {
+			width: 50px;
+			height: 45px;			
+			margin-left: 30px;  	
+		}
+		.advantages-item--hand:before {			
+			background-size: 80%;			
+		}
+		.advantages-item--glasses:before {			
+			background-size: 100%;			
+		}
+		.advantages-item--camera:before {			
+			background-size: 87%;			
+		}
+		.advantages-item--veiw:before {			
+			background-size: 100%;
+		}
+	}
+	@media (min-width: $screen-lg) {
+		&__inner {
+		display: flex;
+		flex-wrap: nowrap;	
+		width: 100%;
+		justify-content: center;
+		height: 150px;		
+		}
+		.advantages-item {			
+			padding-left: 115px;			
+			width: 14%;
+			display: inline-flex;
+		}
+		.advantages-item:before {
+			width: 74px;
+			height: 65px;			
+			margin-left: 30px;  	
+		}
+		.advantages-item--hand:before {			
+			background-size: 80%;			
+		}
+		.advantages-item--glasses:before {			
+			background-size: 100%;					
+		}
+		.advantages-item--camera:before {			
+			background-size: 87%;					
+		}
+		.advantages-item--veiw:before {			
+			background-size: 100%;
+			
+		}
+		.advantages-item--hand {
+			width: 14%;			
+			align-self: flex-start;
+		}
+		.advantages-item--glasses {					
+			width: 14%;
+			align-self: flex-end;		
+		}
+		.advantages-item--camera {			
+			width: 9%;
+			align-self: flex-end;						
+		}
+		.advantages-item--veiw {			
+			width: 9%;
+			align-self: flex-start;
+			
+		}
+	}
+}
