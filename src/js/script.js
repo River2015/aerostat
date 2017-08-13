@@ -23,5 +23,35 @@ $(document).ready(function(){
 	});
 	});
 
+	$('.ananas').slick({
+   slidesToShow: 4,
+   infinite: true,
+   autoplay: true,
+   autoplaySpeed: 2000,
+   responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        arrows: true,
+        centerMode: false,
+        centerPadding: '0px',
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: true,
+        centerMode: false,
+        centerPadding: '0px',
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }   
+   ]
+  });
+
+
 
 });

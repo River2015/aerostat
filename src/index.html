@@ -90,40 +90,78 @@
     </div>
   </section>
   <section id='about' class="about">
-    <h2 class="about__title title">Вкратце</h2>
-    <p class="about__text">Более 5 лет воздухоплавательная команда Нева-Аэро выполняет полеты на воздущных шарах для гостей и жителей Санкт-Петербурга над одним из самых живописных мест России - Царским селом и Павловском, возведенных в Пушкинском районе Санкт-Петербурга. <span> Мы предлагаем полететь с нами</span></p>
-    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/QgpB10STlbc" frameborder="0" allowfullscreen></iframe>
+    <div class="container about__container">
+      <div class="about__inner">
+        <h2 class="about__title title title--left">Вкратце</h2>
+        <p class="about__text">Более 5 лет воздухоплавательная команда Нева-Аэро выполняет полеты на воздущных шарах для гостей и жителей Санкт-Петербурга над одним из самых живописных мест России - Царским селом и Павловском, возведенных в Пушкинском районе Санкт-Петербурга. <br><span class="about__last"> Мы предлагаем полететь с нами</span></p>
+      </div>
+      <iframe class="video" src="https://www.youtube.com/embed/QgpB10STlbc" frameborder="0" allowfullscreen></iframe>
+    </div>
   </section>
   <section class="gallery">
-    <div class="container">
-      <h2 id='gallery' class="gallery__title title">Галерея</h2>
+    <div class="container gallery__container">
+      <h2 id='gallery' class="gallery__title title title--middle">Галерея</h2>
       <div class="ananas">
-        <div class="gallery-item">
-          <img src="img/Gallery_img1.jpg" alt="gallery_in_sky" class="galary__img">
-          <div class="gallery_item__decoration">  
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="img/Gallery_img2.jpg" alt="gallery_deffrent_forms" class="galary__img">
-          <div class="gallery_item__decoration">            
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="img/Gallery_img3.jpg" alt="gallery_over_Graund" class="galary__img">
-          <div class="gallery_item__decoration">            
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="img/Gallery_img4.jpg" alt="gallery_view" class="galary__img">
-          <div class="gallery_item__decoration">            
-          </div> 
-        </div>       
+        <!-- <div class="img-inner"> -->
+        <picture>
+          <source srcset="img/Gallery_img1.jpg" media="(min-width: 1200px)">
+          <source srcset="img/gallery_img1_sm.jpg" media="(min-width: 768px)">
+          <img src="img/gallery_img1_sm.jpg" alt="gallery_in_sky"  class="gallery__img">
+        </picture>
+        <!-- </div> -->
+         <!-- <div class="img-inner"> -->
+        <picture>
+          <source srcset="img/Gallery_img2.jpg" media="(min-width: 1200px)">
+          <source srcset="img/gallery_img2_sm.jpg" media="(min-width: 768px)">
+          <img src="img/gallery_img2_sm.jpg" alt="gallery_deffrent_forms"  class="gallery__img">
+        </picture>
+        <!-- </div> -->
+         <!-- <div class="img-inner"> -->
+        <picture>
+          <source srcset="img/Gallery_img3.jpg" media="(min-width: 1200px)">
+          <source srcset="img/gallery_img3_sm.jpg" media="(min-width: 768px)">
+          <img src="img/gallery_img3_sm.jpg" alt="gallery_over_Graund"  class="gallery__img">
+        </picture>
+        <!-- </div> -->
+         <!-- <div class="img-inner"> -->
+        <picture>
+          <source srcset="img/Gallery_img4.jpg" media="(min-width: 1200px)">
+          <source srcset="img/gallery_img4_sm.jpg" media="(min-width: 768px)">
+          <img src="img/gallery_img4_sm.jpg" alt="gallery_view"  class="gallery__img">
+        </picture> 
+        <picture>
+          <source srcset="img/Gallery_img1.jpg" media="(min-width: 1200px)">
+          <source srcset="img/gallery_img1_sm.jpg" media="(min-width: 768px)">
+          <img src="img/gallery_img1_sm.jpg" alt="gallery_in_sky"  class="gallery__img">
+        </picture>
+        <!-- </div> -->
+         <!-- <div class="img-inner"> -->
+        <picture>
+          <source srcset="img/Gallery_img2.jpg" media="(min-width: 1200px)">
+          <source srcset="img/gallery_img2_sm.jpg" media="(min-width: 768px)">
+          <img src="img/gallery_img2_sm.jpg" alt="gallery_deffrent_forms"  class="gallery__img">
+        </picture>
+        <!-- </div> -->
+         <!-- <div class="img-inner"> -->
+        <picture>
+          <source srcset="img/Gallery_img3.jpg" media="(min-width: 1200px)">
+          <source srcset="img/gallery_img3_sm.jpg" media="(min-width: 768px)">
+          <img src="img/gallery_img3_sm.jpg" alt="gallery_over_Graund"  class="gallery__img">
+        </picture>
+        <!-- </div> -->
+         <!-- <div class="img-inner"> -->
+        <picture>
+          <source srcset="img/Gallery_img4.jpg" media="(min-width: 1200px)">
+          <source srcset="img/gallery_img4_sm.jpg" media="(min-width: 768px)">
+          <img src="img/gallery_img4_sm.jpg" alt="gallery_view"  class="gallery__img">
+        </picture>  
+        <!-- </div>        -->
       </div>
     </div>
   </section>
   <section class="flights">
     <div class="container">
-      <h2 id='flights' class="flights__title">Как проходят полеты</h2>
+      <h2 id='flights' class="flights__title title title--middle">Как проходят полеты</h2>
     </div>
     <div class="flights__wrapper">
       <div class="flights__inner">
@@ -139,7 +177,7 @@
   <section class="price">
     <div class="container">
       <div class="price__description">
-        <h2 id='buy' class="price__title title">Расчитать стоимость</h2>
+        <h2 id='buy' class="price__title title title--left">Расчитать стоимость</h2>
         <p class="price_text">Итак, в назначенное время вы приехали на место полета. Команда уже готовит шар к полету- опеделяется направление верта, запускаются горелки.</p>
         <p class="price_text">Оболочка начинает заполняться теплым воздухом, и аэростот делает первый вздох.</p>
         <p class="price_text">Выбирайте, куда мы полетим сегодня!</p>
@@ -161,7 +199,7 @@
   </section>
   <section class="questions">
     <div class="questions__container">
-      <h2 class="questions__title title">Частые вопросы</h2>
+      <h2 class="questions__title title title--left">Частые вопросы</h2>
       <div class="outer-item">
         <p class="item__qestion">Что взять с собой в полет?</p>
       </div>
@@ -190,7 +228,7 @@
   </section>
   <section class="payment">
     <div class="paimant__container">
-      <h2 class="payment__title">Способы оплаты</h2>
+      <h2 class="payment__title title title--left">Способы оплаты</h2>
       <nav class="payment-menu">
         <ul class="payment-menu__list">
           <li class="payment-menu__items"><a href="" class="payment-menu__link">Наличными</a></li>
@@ -240,7 +278,7 @@
   </section>
   <section id='team' class="team">
     <div class="container">
-      <h2 class="team__title title">Команда инструкторов</h2>
+      <h2 class="team__title title title--middle">Команда инструкторов</h2>
       <div class="team-item">
         <div class="team-item__inner"><img src="img/team_mariam.jpg" alt="chif_pilot_maria_marieva" class="team-item__img"></div>
         <p class="tem-item__name">Мария Мариева</p>
@@ -265,7 +303,7 @@
   </section>
   <section class="comments">
     <div class="container">
-      <h2 class="comments__title">Отзывы</h2>
+      <h2 class="comments__title title title--middle">Отзывы</h2>
       <div class="briliant">
         <div class="comments__inner">
           <div class="comments-item">

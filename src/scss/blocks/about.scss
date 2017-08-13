@@ -1,12 +1,57 @@
 .about {
+	&__title {
+		margin-top: 25px;
+		margin-left: 25px;
+		margin-bottom: 40px;
+	}
+	
+	&__text {
+		margin-left: 25px;
+		line-height: 24px;
+	}
+		&__last {
+		line-height: 45px;
+		}
+	
 	@media (min-width: $screen-xs) {
+		&__inner {
+			width: 100%;
+		}
 		.video {
 			display: none;
 		}
 	}
 	@media (min-width: $screen-sm) {
+		&__inner {
+			width: 84%;
+		}
 		.video {
 			display: block;
+			margin: auto;
+			width: 95%;
+			height: 345px;
+			box-shadow: 0 35px 0 -24px $background-color-sh;
+		}
+	}
+	@media (min-width: $screen-lg) {
+		&__container {
+			display: flex;
+			margin-top: 55px;
+		}
+		&__inner {
+			
+			width: 355px;
+		}
+		.video {
+			
+			margin: auto;
+			width: 750px;
+			height: 345px;
+			box-shadow: 0 35px 0 -24px $background-color-sh;
+		}
+		&__title {
+			margin-top: 0;
+			margin-bottom: 65px;
 		}
 	}
 }

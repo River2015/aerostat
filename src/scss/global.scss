@@ -1,8 +1,8 @@
 body {
   min-width: 320px;
   margin: 0;
-  font-family: $font-family;
-  color: $text-color;
+  font-family: $font-family-r;
+  color: $text-color-ad;
 }
 .container {
 	margin: 0 auto;
@@ -24,4 +24,25 @@ body {
 a {
 	text-decoration: none;
 	color: $text-color-w;
+}
+h2 {
+	font-family: $font-family-r;
+	font-size: $font-size +14px;
+	position: relative;
+}
+h2:after {
+	content: '';
+	width: 56px;
+	height: 7px;
+	background-color: $background-color-tit;
+	position: absolute;
+}
+.title--left:after {
+		left:0px;
+		top:45px;
+	}
+
+.title--middle:after {
+	left: 46%;
+    top: 44px;
 }
