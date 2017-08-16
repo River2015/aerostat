@@ -101,29 +101,22 @@
   <section class="gallery">
     <div class="container gallery__container">
       <h2 id='gallery' class="gallery__title title title--middle">Галерея</h2>
-      <div class="ananas">
-        <!-- <div class="img-inner"> -->
+      <div class="ananas">        
         <picture>
           <source srcset="img/Gallery_img1.jpg" media="(min-width: 1200px)">
           <source srcset="img/gallery_img1_sm.jpg" media="(min-width: 768px)">
           <img src="img/gallery_img1_sm.jpg" alt="gallery_in_sky"  class="gallery__img">
-        </picture>
-        <!-- </div> -->
-         <!-- <div class="img-inner"> -->
+        </picture>        
         <picture>
           <source srcset="img/Gallery_img2.jpg" media="(min-width: 1200px)">
           <source srcset="img/gallery_img2_sm.jpg" media="(min-width: 768px)">
           <img src="img/gallery_img2_sm.jpg" alt="gallery_deffrent_forms"  class="gallery__img">
-        </picture>
-        <!-- </div> -->
-         <!-- <div class="img-inner"> -->
+        </picture>       
         <picture>
           <source srcset="img/Gallery_img3.jpg" media="(min-width: 1200px)">
           <source srcset="img/gallery_img3_sm.jpg" media="(min-width: 768px)">
           <img src="img/gallery_img3_sm.jpg" alt="gallery_over_Graund"  class="gallery__img">
-        </picture>
-        <!-- </div> -->
-         <!-- <div class="img-inner"> -->
+        </picture>        
         <picture>
           <source srcset="img/Gallery_img4.jpg" media="(min-width: 1200px)">
           <source srcset="img/gallery_img4_sm.jpg" media="(min-width: 768px)">
@@ -134,28 +127,21 @@
           <source srcset="img/gallery_img1_sm.jpg" media="(min-width: 768px)">
           <img src="img/gallery_img1_sm.jpg" alt="gallery_in_sky"  class="gallery__img">
         </picture>
-        <!-- </div> -->
-         <!-- <div class="img-inner"> -->
         <picture>
           <source srcset="img/Gallery_img2.jpg" media="(min-width: 1200px)">
           <source srcset="img/gallery_img2_sm.jpg" media="(min-width: 768px)">
           <img src="img/gallery_img2_sm.jpg" alt="gallery_deffrent_forms"  class="gallery__img">
         </picture>
-        <!-- </div> -->
-         <!-- <div class="img-inner"> -->
         <picture>
           <source srcset="img/Gallery_img3.jpg" media="(min-width: 1200px)">
           <source srcset="img/gallery_img3_sm.jpg" media="(min-width: 768px)">
           <img src="img/gallery_img3_sm.jpg" alt="gallery_over_Graund"  class="gallery__img">
-        </picture>
-        <!-- </div> -->
-         <!-- <div class="img-inner"> -->
+        </picture>       
         <picture>
           <source srcset="img/Gallery_img4.jpg" media="(min-width: 1200px)">
           <source srcset="img/gallery_img4_sm.jpg" media="(min-width: 768px)">
           <img src="img/gallery_img4_sm.jpg" alt="gallery_view"  class="gallery__img">
-        </picture>  
-        <!-- </div>        -->
+        </picture>        
       </div>
     </div>
   </section>
@@ -165,16 +151,29 @@
     </div>
     <div class="flights__wrapper">
       <div class="flights__inner">
-        <p class="flights-item">Взлет</p>
-        <p class="flights-item">Набираем высоту</p>
-        <p class="flights-item">Летаем</p>
-        <p class="flights-item">Снижаемся</p>
-        <p class="flights-item">садимся</p>
-        <div class="countdown"></div>
+        <ul class="flights-menu__list">
+          <li class="flights-menu__item"><p class="flights-item flights-item--first">Взлет</p></li>
+          <li class="flights-menu__item"><p class="flights-item flights-item--second">Набираем высоту</p></li>
+          <li class="flights-menu__item"> <p class="flights-item flights-item--third">Летаем</p></li>
+          <li class="flights-menu__item"><p class="flights-item flights-item--fouth">Снижаемся</p></li>
+          <li class="flights-menu__item"><p class="flights-item flights-item--fifth">Cадимся</p></li>
+        </ul>
+        
+        
+       
+        
+        
+        <div class="countdown">
+          <p class="countdown__text">До ближайшего полета:</p>
+          <div id="cd" class="cd"></div>
+        </div>
+
+
+
       </div>
     </div>
   </section>
-  <section class="price">
+  <section class="  price">
     <div class="container">
       <div class="price__description">
         <h2 id='buy' class="price__title title title--left">Расчитать стоимость</h2>
