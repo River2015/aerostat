@@ -94,4 +94,24 @@ $(document).ready(function(){
 
 $("#cd").countdown("2018/01/01", function(event) { $(this).text( event.strftime('%D дней %H часов %M минут %S секунд') );});
 
+
+
+  
+
+$("#route").change(function () {
+  $("#persons").change(function () {
+var persons = $("#persons :selected").val(); 
+        var persons = parseFloat(persons);
+  var route = $("#route :selected").val(); 
+        var route = parseFloat(route);
+ result = persons * route; 
+  
+        $("#result").val(result); 
+  $('#result').html(result);
+
+                         
+      });
+    });
+
 });
+

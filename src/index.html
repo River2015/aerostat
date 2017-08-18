@@ -177,21 +177,30 @@
     <div class="container">
       <div class="price__description">
         <h2 id='buy' class="price__title title title--left">Расчитать стоимость</h2>
-        <p class="price_text">Итак, в назначенное время вы приехали на место полета. Команда уже готовит шар к полету- опеделяется направление верта, запускаются горелки.</p>
-        <p class="price_text">Оболочка начинает заполняться теплым воздухом, и аэростот делает первый вздох.</p>
-        <p class="price_text">Выбирайте, куда мы полетим сегодня!</p>
+        <p class="price__text">Итак, в назначенное время вы приехали на место полета. Команда уже готовит шар к полету- опеделяется направление верта, запускаются горелки.</p>
+        <p class="price__text">Оболочка начинает заполняться теплым воздухом, и аэростот делает первый вздох.</p>
+        <p class="price__text">Выбирайте, куда мы полетим сегодня!</p>
       </div>
-      <div class="price__colculator">
-        <form action="" class="colculalor">
-          <input type="text" class="route">
-          <input type="text" class="persons">
-          <input type="text" class="name">
-          <input type="text" class="phone">
-          <div class="price-summ">
-            <p class="price-summ__text">Стоимость</p>
-            <p class="price-summ__value"></p>
-          </div>
-          <button class="btn btn-price">Полетели!</button>
+      <div class="price__calculator">
+        <form action="/" class="calculator">
+          <label class="label"> Маршрут полета:</label><select name="action" id="route" placeholder="выберите маршрут">
+  <option value="" disabled selected>Выберите маршрут</option>
+          <option value="12000">Великие Луки, Новосоколики  </option>
+          <option value="18000">Великий Новгород</option>
+          <option value="15000">Волхов, Старая Ладога, Сясьстрой</option>
+          <option value="20000">Пушкин, Красное село, Ропща</option>
+          </select>          
+          <label class="label"> Количесво человек:</label><select name="persons" id="persons"><option value="" disabled selected>Выберите количесво человек
+          </option>
+  <option value="1">1</option>
+          <option value="1">2</option>
+          <option value="2">3</option>         
+          </select>          
+          <label class="label"> Имя и фамилия:</label><input class="men" type="text">
+          <label class="label"> Телефон:</label><input  type="text" class="phone">
+           <label class="label label--price"> Стоимость:</label><input type="text" id="result" class="result" name="result">            
+          <INPUT type="submit" class="submbtn" name="send" value="Полетели!"/>
+       
         </form>
       </div>
     </div>
