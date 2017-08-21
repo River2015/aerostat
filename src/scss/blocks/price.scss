@@ -4,9 +4,42 @@
 		margin-left: 25px;
 		margin-bottom: 40px;
 	}
-	&__text {
-		@media (min-width: $screen-xs) {
+	@media (min-width: $screen-xs) {
+		&__text {
 			display: none;
 		}
 	}
+	@media (min-width: $screen-sm) {
+		&__text {
+			display: block;
+			font-size: $font-size + 4px;
+			font-family: $font-family-i;
+			margin-left: 25px;
+		}
+		&__calculator {
+			width: 100%;
+			background-image: url(../img/calculator_background.jpg);
+			background-position: left;
+			background-size: cover;
+			height: 403px;
+			padding-top: 15px;
+		}
+	}
+	@media (min-width: $screen-lg) {
+		&__description {
+			width: 40%;
+			float: left;
+		}
+		
+		&__calculator {
+			width: 60%;
+			float: right;
+			background-image: none;			
+		}
+		&__container {
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+	}
+
 }

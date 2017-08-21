@@ -3,9 +3,9 @@
 @media (min-width: $screen-xs){
 	margin-right: 25px;
 	margin-left: 25px;
-	 .label {
+	.label {
 		display: block;
-		font-size: $font-size + 3px;
+		font-size: $font-size + 5px;
 		margin-top: 14px;
 		margin-bottom: 14px;
 		width: 100%;
@@ -15,55 +15,156 @@
 		border: 1px solid $text-color-f;
 		border-radius: 4px;
 		height: 40px;
-		font-size: $font-size + 3px;
+		font-size: $font-size + 4px;
 		color: $text-color-ad;
+		font-family: $font-family-r;
 		outline: none;
 	}
 	input {
 		width: 100%;
 		border: 1px solid $text-color-f;
 		border-radius: 4px;
-		height: 40px;
+		height: 38px;
 		font-size: $font-size + 3px;
 		color: $text-color-ad;
 		outline: none;
 	}
-	.label--price {
-	@media (min-width: $screen-xs) {
-		display: none;
+	&__inner {
+		width: 100%;
+		position: relative;
+		clear: left;		
 	}
-	@media (min-width: $screen-sm) {
+	&__wraper {
+		width: 40%;
 		display: block;
-		}
+		float: left;
+	}
+	&__inner:before {
+		content: '';
+		position: absolute;
+    	width: 30px;
+    	height: 30px;    	
+    	left: 13px;
+    	top: 5px;    	
+    	display: inline-block;    	
+    	background-repeat: no-repeat;
+    	background-position: left;	
+    	clear: left;
+	}
+	&__inner--men:before{
+		background-image: url(../img/form_men.png);
+	}
+	&__inner--phone:before{
+		background-image: url(../img/phone.png);
+	}
+	.rubls {
+		width: 23px;
+		display: block;
+		float: left;
+		margin-top: 30px;
+		border: none;		
+		color: $text-color-c;
+		-webkit-input-placeholder {color: $text-color-c;}
+-moz-placeholder          {color: $text-color-c;}/* Firefox 19+ */
+-moz-placeholder           {color: $text-color-c;}/* Firefox 18- */
+-ms-input-placeholder      {color: $text-color-c;}
+		font-size: $font-size + 24px;
 	}
 
-	.result {
-	@media (min-width: $screen-xs) {	
-		width: 44%;
+	.rubls::-webkit-input-placeholder {
+    color: $text-color-c;
+    font-family: $font-family-m;
+
+	}
+	.label--price {	
+		display: none;
+	}
+
+	.result {		
+		width: 110px;
 		display: block;
 		margin-top: 30px;
 		border: none;
 		float: left;
 		color: $text-color-c;
-		font-size: $font-size + 14px;
-
-
-	}
-}
-	}.submbtn {
-	@media (min-width: $screen-xs) {	
+		font-size: $font-size + 24px;
+		font-family: $font-family-m;		
+		}
+	.submbtn {	
 		width: 160px;
 		display: block;
 		margin-top: 30px;
 		background-color: $background-color-f;
 		float: right;
-		color: $text-color-w;
-
+		color: $text-color-w;	
+		font-family: $font-family-m;
+		}
 	}
-	}
 
+	@media (min-width: $screen-sm) {
+		display: block;
+		width: 78%;
+		margin: auto;
+		height: 360px;
+		background-color: $text-color-w;
+		border-radius: 5px;
+		margin-top: 15px;
 
+		.label {
+		
+		margin-left: 24px;
+		margin-top: 30px;
+		width: 32%;
+		float: left;
+		clear: left;
+		}
+		.label--price {
+			display: block;
+			width: 100px;
+			float: left;
+			margin-top: 40px;
+			font-family: $font-family-b;
+			font-size: $font-size +4px;
+			border-radius: 5px;
+		}
+		input {
+		width: 55%;
+		margin-right: 24px;
+		
+		}
+		.result {
+		margin-right: 0px;	
+		}
+		select {
+		width: 55%;
+		margin-right: 24px;
+		margin-top: 20px;
+		height: 40px;
+		float: right;
+		clear: right;	
+		}
+	
+		&__inner {
+		width: 55%;
+		float: right;
+    	clear: right;
+    	margin-right: 24px;
+    	margin-top: 20px;	
+		}
+		.men, .phone {
+			width: 100%;
+		}
+		
+
+		
 }
+	
+	
+}
+	
+
+
+
 
 option[value=""][disabled] {
   display: none;
