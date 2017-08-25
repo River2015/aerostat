@@ -1,0 +1,87 @@
+.payment {
+	&__container {
+		background-color: $background-color-pink;
+		padding-top: 1px;
+		padding-bottom: 10px;
+	}
+	&__title {
+		margin-left: 25px;
+		margin-top: 40px;
+		margin-bottom: 60px;
+	}
+	.payment-menu {
+		display: none;
+	}
+	.description {
+		
+		&__title {
+			font-size: $font-size +8px;
+			font-family: $font-family-b;
+			margin-top: 35px;
+			margin-left: 25px;
+			margin-right: 25px;
+		}
+		&__text {
+			font-size: $font-size +4px;
+			margin-left: 25px;
+			margin-right: 25px;
+		}
+		&__text--curier {
+			margin-left: 23px;
+			margin-right: 11px;
+		}
+		&__text--card {
+			margin-right: 13px;
+		}
+		&__link, &__span {
+			font-family: $font-family-i;
+		}
+		&__link {
+			color: $text-color-ad;
+		}
+	}
+
+	@media (min-width: $screen-sm) {
+		&__container {
+			background: none;
+		}
+		.payment-menu {
+		display: block;
+		&__list {
+			display: block;
+			padding-left: 25px;
+		}
+		&__items {
+			display: inline-block;
+		}
+		&__link {
+			color: $text-color-ad;
+			background-color: $background-color-pink;
+			padding: 13px;
+			margin-right: 12px;
+			font-size: $font-size +4px; 
+			&--active {
+				background-color: $background-color-red;
+			}
+		}
+		&__link:active {
+			background-color: $background-color-red;
+		}
+
+		}
+	.description {
+		display: none;
+	}
+	.description.active {
+		display: block;
+	}
+
+	}
+	@media (min-width: $screen-lg) {
+		&__container {
+			width: 60%;
+    clear: both;
+    float: right;
+		}
+}
+}

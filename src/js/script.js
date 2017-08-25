@@ -113,5 +113,35 @@ var persons = $("#persons :selected").val();
       });
     });
 
+if (window.matchMedia("(min-width: 768px)").matches) {                
+  $(".payment-menu__link").click(function(){
+    $(".description").eq($(".payment-menu__link").index(this)).addClass("active").siblings().removeClass("active");
+    
+   
+  $(".payment-menu__link").eq($(this).index(this)).addClass("payment-menu__link--active").siblings().removeClass("payment-menu__link--active");
+//    });
+// $(".payment-menu__link--active").click(function(){
+// $(this).css({'backgroundColor' : '#000'});
+});
+}                
+
+
+
+  function accordion() {
+    function openItem() {
+      if ($(this).hasClass('outer-active')) {
+        $(this).removeClass('outer-active');
+      } else {
+      $('.outer').removeClass('outer-active');
+      $(this).addClass ('outer-active');
+        }
+    
+    } 
+    $('.outer').on('click', openItem); 
+  }
+    accordion();
+
+
+
 });
 

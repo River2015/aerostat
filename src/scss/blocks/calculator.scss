@@ -3,6 +3,7 @@
 @media (min-width: $screen-xs){
 	margin-right: 25px;
 	margin-left: 25px;
+	height: 460px;
 	.label {
 		display: block;
 		font-size: $font-size + 5px;
@@ -68,7 +69,7 @@
 -moz-placeholder          {color: $text-color-c;}/* Firefox 19+ */
 -moz-placeholder           {color: $text-color-c;}/* Firefox 18- */
 -ms-input-placeholder      {color: $text-color-c;}
-		font-size: $font-size + 24px;
+		font-size: $font-size + 14px;
 	}
 
 	.rubls::-webkit-input-placeholder {
@@ -81,13 +82,13 @@
 	}
 
 	.result {		
-		width: 110px;
+		width: 85px;
 		display: block;
 		margin-top: 30px;
 		border: none;
 		float: left;
 		color: $text-color-c;
-		font-size: $font-size + 24px;
+		font-size: $font-size + 14px;
 		font-family: $font-family-m;		
 		}
 	.submbtn {	
@@ -133,7 +134,12 @@
 		
 		}
 		.result {
+		width: 110px;
 		margin-right: 0px;	
+		font-size: $font-size +24px;
+		}
+		.rubls {
+			font-size: $font-size +24px;
 		}
 		select {
 		width: 55%;
