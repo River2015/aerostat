@@ -1,5 +1,40 @@
 .comments-item {
+	&__inner {
+		margin: auto;
+    	width: 103px;
+	}
 	&__img {
 		border-radius: 50%;
+	}
+	&__name {
+		text-align: center;
+		font-size: $font-size +8px;
+		font-family: $font-family-m;
+	}
+	&__text {
+		text-align: center;
+		font-size: $font-size +4px;
+		font-family: $font-family-i;
+		margin-bottom: 90px;
+		padding-left: 11px;
+		padding-right: 11px;
+	}
+	.slick-next {
+		top: 90%;
+    left: 60%;
+	}
+	@media (min-width: $screen-sm) {
+		&__text {
+			padding-left: 90px;
+   			padding-right: 90px;
+
+		}
+	}
+	@media (min-width: $screen-lg) {
+		&__text {
+			padding-left: 35px;
+   			padding-right: 35px;
+
+		}
 	}
 }

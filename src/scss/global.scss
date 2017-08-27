@@ -31,6 +31,9 @@ h2 {
 	font-size: $font-size +14px;
 	position: relative;
 }
+.title--middle {
+	text-align: center;	
+}
 h2:after {
 	content: '';
 	width: 56px;

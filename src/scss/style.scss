@@ -2,7 +2,8 @@
 @import 'variables.scss';
 @import 'global.scss';
 @import 'fonts.scss';
-
+@import 'sprite.scss';
+@include sprites($spritesheet-sprites);
 
 @import 'blocks/aerostat.scss';
 @import 'blocks/page-header.scss';
@@ -24,6 +25,10 @@
 @import 'blocks/payment.scss';
 @import 'blocks/questions.scss';
 @import 'blocks/info.scss';
+@import 'blocks/team.scss';
+@import 'blocks/comments.scss';
+@import 'blocks/contacts.scss';
+@import 'blocks/social.scss';
 
 
 @import 'blocks/page-footer.scss';

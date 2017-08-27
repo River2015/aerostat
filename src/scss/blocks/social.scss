@@ -1,0 +1,21 @@
+
+.social {
+	width: 50%;
+    display: block;
+    margin: 0 0 0 0;
+    text-align: center;
+    padding: 0 0 0 24px;
+    /* height: 70px; */
+    padding-top: 25px;
+	&__item {
+		display: inline-block;
+		padding-left: 17px;
+	}
+	&__link {
+		width: 100%;
+		height: 100%;
+	}
+	.sprite {
+		display: inline-block;
+	}
+}

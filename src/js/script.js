@@ -141,6 +141,37 @@ if (window.matchMedia("(min-width: 768px)").matches) {
   }
     accordion();
 
+$('.briliant').slick({
+   slidesToShow: 2,
+   infinite: true,
+   autoplay: true,
+   autoplaySpeed: 2500,
+   responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        arrows: true,
+        //prevArrow: '<div class="slick-prevv"></div>',
+
+       // nextArrow: '<div class="slick-nextv"></div>'
+        centerMode: false,
+        centerPadding: '0px',
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: true,
+        centerMode: false,
+        centerPadding: '0px',
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }   
+   ]
+      });
 
 
 });

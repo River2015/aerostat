@@ -1,0 +1,167 @@
+.contacts {
+	@media (min-width: $screen-xs) {
+		background-image: url(../img/footer_background_xs.jpg);
+		background-repeat: no-repeat;
+		background-position: top;
+		background-size: cover;
+		min-height: 749px;
+    	margin-bottom: -50px;
+    	.airport-contacts {
+    		display: block;
+    		width: 100%; 
+    		position: relative;  
+    		text-align: center;
+    		&:before {
+    			content: '';
+    			position: absolute;
+			    top: 55px;
+			    left: 0;
+			    right: 0;
+			    margin: 0 auto;
+			    width: 62px;
+			    height: 62px;
+			    border-radius: 4px;
+			    background-color: $background-color-blu;
+			    background-image: url(../img/Airoplan.png);
+			    background-position: center;
+			    background-repeat: no-repeat;    			
+    		} 
+    		
+    		&__text {				
+				padding-top: 150px;
+				font-size: $font-size + 8px;
+				font-family: $font-family-m;
+				margin-bottom: 0;				
+    		}
+    		&__adress {				
+				padding-bottom: 30px;				
+				font-size: $font-size +4px;
+				font-family: $font-family-i;
+				margin-top: 10px;
+    		}		
+    	}
+    	.adress-contacts {
+    		padding-left: 80px;
+    		position: relative;
+    		&:before {
+    			content: '';
+    			position: absolute;
+    			left: 22px;
+    			width: 50px;
+    			height: 65px;
+    			background-image: url(../img/plalceholder.png);
+    			background-repeat: no-repeat;
+    		}
+    		&__title {
+    			font-family: $font-family-m;
+    			font-size: $font-size +8px;
+    			color: $text-color-bl;
+    			margin: 0 0 10px 0;
+    			width: 215px;
+    		}
+    		&__adress, &__time {
+    			font-family: $font-family-i;
+    			font-size: $font-size +6px;
+    			margin: 0;
+    		}
+    		&__time {
+    			margin-bottom: 13px;
+    		}
+    		&__phone {
+    			font-family: $font-family-m;
+    			font-size: $font-size +12px;
+    			margin: 0;
+    		}
+    		&--Peterburg {
+    			margin-bottom: 35px;
+    		}
+    		&--Vsevolozhsk {
+    			margin-bottom: 20px;
+    		}
+    	}
+    	.mail-contacts {
+    		padding-left: 80px;
+    		position: relative;
+    		&:before {
+    			content: '';
+    			position: absolute;
+    			width: 40px;
+    			height: 40px;
+    			left: 29px;
+    			top: 5px;
+    			background-image: url(../img/letter.png);
+    			background-repeat: no-repeat;
+    		}
+    		&__link {    			
+    			border-bottom: 2px solid $text-color-ad;
+    			padding-bottom: 3px;
+    			font-size: $font-size +8px;
+    			color: $text-color-ad;
+    		}
+
+    	}
+
+	}
+	@media (min-width: $screen-sm) {
+		background-image: url(../img/footer_background_sm.jpg);
+		min-height: 537px;
+		margin-bottom: -43px;
+		.contacts-inner {
+			display: block;
+			width: 100%;
+		}
+		.adress-contacts {
+			width: 39%;
+			&--Peterburg {
+    			float: left;
+    		}
+    		&--Vsevolozhsk {
+    			
+    			float: right;
+    		}
+    		&__title {
+    			width: 300px;
+    		}
+		}
+		.mail-contacts {
+			clear: both;
+			float: left;
+			width: 100%;
+			&__link {
+				float: left;
+			}
+			.social {
+				float: right;
+				padding: 0;
+			}
+		}
+    	
+	}
+	@media (min-width: $screen-lg) {
+		background-image: url(../img/footer_background_lg.jpg);
+		min-height: 518px;
+		margin-bottom: -43px;
+	.adress-contacts {
+		width: 27%;
+		//clear: both;
+		float: left;
+	}
+	.mail-contacts {
+			clear: none;
+			float: left;
+			width: 19%;
+			&__link {
+				clear: both;
+				
+			}
+			.social {
+				clear: left;
+    float: left;
+    margin-left: -68px;
+    margin-top: 25px;
+    width: 56%;
+			}
+		}
+	}
+
+}
