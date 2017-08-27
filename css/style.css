@@ -24,6 +24,9 @@ h2 {
   font-size: 28px;
   position: relative; }
 
+.title--middle {
+  text-align: center; }
+
 h2:after {
   content: '';
   width: 56px;
@@ -54,6 +57,24 @@ h2:after {
 @font-face {
   font-family: 'FiraSans_Regular';
   src: url("../fonts/FiraSans_Regular.ttf"); }
+
+.facebook {
+  background-image: url(../img/sprite-06028995040394374.png);
+  background-position: 0px 0px;
+  width: 22px;
+  height: 23px; }
+
+.instagram {
+  background-image: url(../img/sprite-06028995040394374.png);
+  background-position: -26px 0px;
+  width: 22px;
+  height: 23px; }
+
+.vk {
+  background-image: url(../img/sprite-06028995040394374.png);
+  background-position: -52px 0px;
+  width: 22px;
+  height: 23px; }
 
 .aerostat__title {
   color: #fff;
@@ -483,6 +504,36 @@ option[value=""][disabled] {
 .info {
   clear: both; }
 
+.team__container {
+  margin-bottom: 70px; }
+
+.team__title {
+  margin-top: 40px;
+  margin-bottom: 70px; }
+
+.comments__title {
+  margin-bottom: 60px; }
+
+.comments__inner {
+  display: inline-block; }
+
+.social {
+  width: 50%;
+  display: block;
+  margin: 0 0 0 0;
+  text-align: center;
+  padding: 0 0 0 24px;
+  /* height: 70px; */
+  padding-top: 25px; }
+  .social__item {
+    display: inline-block;
+    padding-left: 17px; }
+  .social__link {
+    width: 100%;
+    height: 100%; }
+  .social .sprite {
+    display: inline-block; }
+
 .page-footer {
   background-color: #2c2c2c;
   background-size: cover; }
@@ -493,8 +544,29 @@ option[value=""][disabled] {
 .scroll {
   transform: rotate(45deg); }
 
+.comments-item__inner {
+  margin: auto;
+  width: 103px; }
+
 .comments-item__img {
   border-radius: 50%; }
+
+.comments-item__name {
+  text-align: center;
+  font-size: 22px;
+  font-family: "FiraSans_Medium"; }
+
+.comments-item__text {
+  text-align: center;
+  font-size: 18px;
+  font-family: "FiraSans_Italic";
+  margin-bottom: 90px;
+  padding-left: 11px;
+  padding-right: 11px; }
+
+.comments-item .slick-next {
+  top: 90%;
+  left: 60%; }
 
 @media (min-width: 360px){
   .aerostat{
@@ -765,6 +837,126 @@ option[value=""][disabled] {
     -ms-grid-row-align: center;
     align-self: center;
     width: 57%; }
+  .team__inner{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 445px;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .team .team-item{
+    display: -ms-flexbox;
+    display: flex; }
+  .team .team-item__descreption{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-left: 10px; }
+  .team .team-item__name{
+    font-size: 20px;
+    font-family: "FiraSans_Medium";
+    margin: 0;
+    display: -ms-flexbox;
+    display: flex; }
+  .team .team-item__ocuppy{
+    font-size: 16px;
+    margin: 0;
+    display: -ms-flexbox;
+    display: flex; }
+  .team .team-item__inner{
+    width: 35%; }
+  .team .team-item__img{
+    width: 88px;
+    margin-left: 25px;
+    object-fit: cover; }
+  .contacts{
+    background-image: url(../img/footer_background_xs.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    min-height: 749px;
+    margin-bottom: -50px; }
+  .contacts .airport-contacts{
+    display: block;
+    width: 100%;
+    position: relative;
+    text-align: center; }
+  .contacts .airport-contacts:before{
+    content: '';
+    position: absolute;
+    top: 55px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 62px;
+    height: 62px;
+    border-radius: 4px;
+    background-color: #1c5978;
+    background-image: url(../img/Airoplan.png);
+    background-position: center;
+    background-repeat: no-repeat; }
+  .contacts .airport-contacts__text{
+    padding-top: 150px;
+    font-size: 22px;
+    font-family: "FiraSans_Medium";
+    margin-bottom: 0; }
+  .contacts .airport-contacts__adress{
+    padding-bottom: 30px;
+    font-size: 18px;
+    font-family: "FiraSans_Italic";
+    margin-top: 10px; }
+  .contacts .adress-contacts{
+    padding-left: 80px;
+    position: relative; }
+  .contacts .adress-contacts:before{
+    content: '';
+    position: absolute;
+    left: 22px;
+    width: 50px;
+    height: 65px;
+    background-image: url(../img/plalceholder.png);
+    background-repeat: no-repeat; }
+  .contacts .adress-contacts__title{
+    font-family: "FiraSans_Medium";
+    font-size: 22px;
+    color: #000;
+    margin: 0 0 10px 0;
+    width: 215px; }
+  .contacts .adress-contacts__adress, .contacts .adress-contacts__time{
+    font-family: "FiraSans_Italic";
+    font-size: 20px;
+    margin: 0; }
+  .contacts .adress-contacts__time{
+    margin-bottom: 13px; }
+  .contacts .adress-contacts__phone{
+    font-family: "FiraSans_Medium";
+    font-size: 26px;
+    margin: 0; }
+  .contacts .adress-contacts--Peterburg{
+    margin-bottom: 35px; }
+  .contacts .adress-contacts--Vsevolozhsk{
+    margin-bottom: 20px; }
+  .contacts .mail-contacts{
+    padding-left: 80px;
+    position: relative; }
+  .contacts .mail-contacts:before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 29px;
+    top: 5px;
+    background-image: url(../img/letter.png);
+    background-repeat: no-repeat; }
+  .contacts .mail-contacts__link{
+    border-bottom: 2px solid #444444;
+    padding-bottom: 3px;
+    font-size: 22px;
+    color: #444444; }
   .footer-info{
     display: -ms-flexbox;
     display: flex;
@@ -1099,6 +1291,87 @@ option[value=""][disabled] {
     width: 68%; }
   .info .info-item__span{
     font-size: 32px; }
+  .team__inner{
+    -ms-flex-direction: unset;
+    flex-direction: unset;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 638px; }
+  .team .team-item{
+    width: 40%;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+  .team .team-item__img{
+    width: 161px;
+    margin: 0; }
+  .team .team-item__inner{
+    width: auto;
+    position: relative; }
+  .team .team-item__inner:before{
+    content: '';
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    background-color: #444444;
+    z-index: 10;
+    left: 113px;
+    top: 106px; }
+  .team .team-item__inner:after{
+    content: '';
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    background-image: url(../img/team_glasses.png);
+    background-repeat: no-repeat;
+    z-index: 100; }
+  .team .team-item__inner--glasses:after{
+    background-image: url(../img/team_glasses.png);
+    left: 126px;
+    top: 134px; }
+  .team .team-item__inner--mobil:after{
+    background-image: url(../img/team_mobil.png);
+    left: 142px;
+    top: 124px; }
+  .team .team-item__inner--key:after{
+    background-image: url(../img/team_key.png);
+    left: 136px;
+    top: 128px; }
+  .team .team-item__descreption{
+    margin: 0;
+    -ms-flex-align: center;
+    align-items: center; }
+  .contacts{
+    background-image: url(../img/footer_background_sm.jpg);
+    min-height: 537px;
+    margin-bottom: -43px; }
+  .contacts .contacts-inner{
+    display: block;
+    width: 100%; }
+  .contacts .adress-contacts{
+    width: 39%; }
+  .contacts .adress-contacts--Peterburg{
+    float: left; }
+  .contacts .adress-contacts--Vsevolozhsk{
+    float: right; }
+  .contacts .adress-contacts__title{
+    width: 300px; }
+  .contacts .mail-contacts{
+    clear: both;
+    float: left;
+    width: 100%; }
+  .contacts .mail-contacts__link{
+    float: left; }
+  .contacts .mail-contacts .social{
+    float: right;
+    padding: 0; }
   .footer-info .scroll{
     margin: 25px 30px 20px 11px; }
   .footer-info .logo{
@@ -1107,7 +1380,10 @@ option[value=""][disabled] {
     width: 23px;
     height: 23px;
     border-left: 7px solid #fff;
-    border-top: 7px solid #fff; } }
+    border-top: 7px solid #fff; }
+  .comments-item__text{
+    padding-left: 90px;
+    padding-right: 90px; } }
 
 @media (min-width: 1200px){
   .container{
@@ -1281,12 +1557,42 @@ option[value=""][disabled] {
     font-size: 22px; }
   .info .info-item:last-child{
     width: 24%; }
+  .team__inner{
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    height: 260px; }
+  .team .team-item{
+    width: auto; }
+  .contacts{
+    background-image: url(../img/footer_background_lg.jpg);
+    min-height: 518px;
+    margin-bottom: -43px; }
+  .contacts .adress-contacts{
+    width: 27%;
+    float: left; }
+  .contacts .mail-contacts{
+    clear: none;
+    float: left;
+    width: 19%; }
+  .contacts .mail-contacts__link{
+    clear: both; }
+  .contacts .mail-contacts .social{
+    clear: left;
+    float: left;
+    margin-left: -68px;
+    margin-top: 25px;
+    width: 56%; }
   .footer-info .main-menu{
     display: -ms-inline-flexbox;
     display: inline-flex; }
   .footer-info .scroll{
     display: none; }
   .footer-info .logo{
-    margin: 22px 14px 22px 26px; } }
+    margin: 22px 14px 22px 26px; }
+  .comments-item__text{
+    padding-left: 35px;
+    padding-right: 35px; } }
 
 /*# sourceMappingURL=style.css.map */

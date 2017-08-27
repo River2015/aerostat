@@ -290,27 +290,45 @@
     </div>
   </section>
   <section id='team' class="team">
-    <div class="container">
+    <div class="container team__container">
       <h2 class="team__title title title--middle">Команда инструкторов</h2>
+      <div class="team__inner">
       <div class="team-item">
-        <div class="team-item__inner"><img src="img/team_mariam.jpg" alt="chif_pilot_maria_marieva" class="team-item__img"></div>
-        <p class="tem-item__name">Мария Мариева</p>
-        <p class="team-item__ocuppy">Старший пилот</p>
+        <div class="team-item__inner team-item__inner--glasses">
+          <img src="img/team_mariam.jpg" alt="chif_pilot_maria_marieva" class="team-item__img">
+        </div>
+        <div class="team-item__descreption">
+          <p class="team-item__name">Мария Мариева</p>
+          <p class="team-item__ocuppy">Старший пилот</p>
+        </div>
       </div>
       <div class="team-item">
-        <div class="team-item__inner"><img src="img/team_nadezdan.jpg" alt="second_pilot_nadezda_nadezdova" class="team-item__img"></div>
-        <p class="tem-item__name">Нажежда Надеждова</p>
-        <p class="team-item__ocuppy">Второй пилот</p>
+        <div class="team-item__inner team-item__inner--glasses">
+          <img src="img/team_nadezdan.jpg" alt="second_pilot_nadezda_nadezdova" class="team-item__img">
+        </div>
+        <div class="team-item__descreption">
+          <p class="team-item__name">Нажежда Надеждова</p>
+          <p class="team-item__ocuppy">Второй пилот</p>
+        </div>
       </div>
       <div class="team-item">
-        <div class="team-item__inner"><img src="img/team_irinai.jpg" alt="dispatcher_irina_irinova" class="team-item__img"></div>
-        <p class="tem-item__name">Ирина Иринова</p>
-        <p class="team-item__ocuppy">Авиадиспетчер</p>
+        <div class="team-item__inner team-item__inner--mobil">
+          <img src="img/team_irinai.jpg" alt="dispatcher_irina_irinova" class="team-item__img">
+        </div>
+        <div class="team-item__descreption">
+          <p class="team-item__name">Ирина Иринова</p>
+          <p class="team-item__ocuppy">Авиадиспетчер</p>
+        </div>
       </div>
       <div class="team-item">
-        <div class="team-item__inner"><img src="img/team_alenaa.jpg" alt="aeromechanic_alena_alenova" class="team-item__img"></div>
-        <p class="tem-item__name">Алена Аленова</p>
-        <p class="team-item__ocuppy">Авиатехник</p>
+        <div class="team-item__inner team-item__inner--key">
+          <img src="img/team_alenaa.jpg" alt="aeromechanic_alena_alenova" class="team-item__img">
+          </div>
+        <div class="team-item__descreption">
+          <p class="team-item__name">Алена Аленова</p>
+          <p class="team-item__ocuppy">Авиатехник</p>
+        </div>
+      </div>
       </div>
     </div>
   </section>
@@ -318,7 +336,7 @@
     <div class="container">
       <h2 class="comments__title title title--middle">Отзывы</h2>
       <div class="briliant">
-        <div class="comments__inner">
+        <!-- <div class="comments__inner"> -->
           <div class="comments-item">
             <div class="comments-item__inner"><img src="img/comments_oalexeeva.jpg" alt="client_Olga_Alexeeva" class="comments-item__img"></div>
             <p class="comments-item__name">Ольга Алексеева</p>
@@ -328,8 +346,17 @@
             <div class="comments-item__inner"><img src="img/comments_aribkin.jpg" alt="client_Artem_Ribkin" class="comments-item__img"></div>
             <p class="comments-item__name">Артем Рыбкин</p>
             <p class="comments-item__text">Жене подарил полет на воздушном шаре. Сделал сюрприз на день рождения. Жена была в восторге, мне и самому понравилось, очень необычные ощущения от полета, хоть не самолет, а летит быстро, маршрут подобрали красивый. Спасибо вам, нам все понравилось.</p>
+          </div><div class="comments-item">
+            <div class="comments-item__inner"><img src="img/comments_oalexeeva.jpg" alt="client_Olga_Alexeeva" class="comments-item__img"></div>
+            <p class="comments-item__name">Ольга Алексеева</p>
+            <p class="comments-item__text">Оооо, это было чудесно!!! Я не знала, что воздушные шары такие огромные. Забавно, большой шар и маленькая корзинка. Полет восхитительный, выше всяких похвал. Мы побывали в самом красивом месте на Земле - в небе, оттуда открываются потрясающие виды.</p>
           </div>
-        </div>
+          <div class="comments-item">
+            <div class="comments-item__inner"><img src="img/comments_aribkin.jpg" alt="client_Artem_Ribkin" class="comments-item__img"></div>
+            <p class="comments-item__name">Артем Рыбкин</p>
+            <p class="comments-item__text">Жене подарил полет на воздушном шаре. Сделал сюрприз на день рождения. Жена была в восторге, мне и самому понравилось, очень необычные ощущения от полета, хоть не самолет, а летит быстро, маршрут подобрали красивый. Спасибо вам, нам все понравилось.</p>
+          </div>
+        <!-- </div> -->
       </div>
     </div>
   </section>
@@ -339,20 +366,21 @@
         <p class="airport-contacts__text">Запишите адрес аэропорта</p>
         <p class="airport-contacts__adress">Всеволжск, улица Аэродромная 19а</p>
       </div>
-      <div class="adress-contacts">
-        <p class="adress-contacts__text">Наш офис в Питере:</p>
+      <div class="contacts-inner">
+      <div class="adress-contacts adress-contacts--Peterburg">
+        <p class="adress-contacts__title">Наш офис в Питере:</p>
         <p class="adress-contacts__adress">Литейный 14Б</p>
         <p class="adress-contacts__time">12:00 - 19:00</p>
-        <p class="adress-contacts__adress">746-67-33</p>
+        <p class="adress-contacts__phone">746-67-33</p>
       </div> 
-      <div class="adress-contacts">
-        <p class="adress-contacts__text">Наш офис во Всеволожске:</p>
+      <div class="adress-contacts adress-contacts--Vsevolozhsk">
+        <p class="adress-contacts__title">Наш офис во Всеволожске:</p>
         <p class="adress-contacts__adress">Аэродромная 19А</p>
         <p class="adress-contacts__time">12:00 - 19:00</p>
         <p class="adress-contacts__phone">746-67-33</p>
       </div>     
       <div class="mail-contacts">
-        <a href="mailto:mnebyvnebo@gmail.com" class="mail-info__link">mnebyvnebo@gmail.com</a>
+        <a href="mailto:mnebyvnebo@gmail.com" class="mail-contacts__link">mnebyvnebo@gmail.com</a>
         <ul class="mail-contacts__social social">
           <li class="social__item">
             <a href="https://vk.com" class="social__link">           
@@ -370,6 +398,7 @@
             </a>
           </li>
         </ul>
+       </div> 
       </div>
       </div>
     </section>
