@@ -2,6 +2,7 @@
 @import 'variables.scss';
 @import 'global.scss';
 @import 'fonts.scss';
+@import 'normalize.scss';
 @import 'sprite.scss';
 @include sprites($spritesheet-sprites);
 

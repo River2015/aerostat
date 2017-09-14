@@ -9,33 +9,34 @@
 	width: 100%;
 	position: relative;
 	z-index: 1;
-
+    &__container {
+        min-height: calc( 100vh - 205px);
+    }
 	&__text {
 		display: none;
 	}
 	&__link {
 		display: none;
 	}
-	&__row {
-
-	}
+	
   }
    @media (min-width: $screen-sm) {
+    overflow: hidden;
     background-image: url(../img/aerostat_ms.jpg);
     min-height: calc( 100vh + 70px);
+    &__container {
+        min-height: calc( 100vh + 70px);
+    }
     &__text {    	
     	font-size: $font-size + 6px;
     	color: $text-color-w;
     	position: absolute;
     }
-    &__text--expiriens {
+    &__text--expression {
     	display: block;
     	left: 9%;
     	top: 390px;
     }
-    //&__text--expression {
-    	//display: none;
-   // }
     &__text--excursion {
     	display: block;
     	left: 11%;
@@ -51,20 +52,34 @@
     	left: 68%;
     	top: 279px;
     }
+    &__wrap {
+        position: absolute;
+        bottom: 60px;
+        height: 100px;
+        width: 100%;
+    }
+    &__inner {
+        display: block;
+        position: relative;
+        left: 50%;
+        top: 0px;
+    }
+
     &__link {
     	display: block;
     	position: absolute;
     	font-size: $font-size + 4px;
     	padding: 10px;
     	border: 1px solid $text-color-w;
-    	left: 42%;
-    	top: 487px;
+    	left: -55px;
+    	top: 0px;
     }
+
     &__row {
     	display: block;
     	position: relative;
     	left: 50%;
-    	top: 309px;
+    	top: 70px;
     	.vertical {
     		width: 2px;
     		height: 28px;
@@ -86,15 +101,11 @@
    @media (min-width: $screen-lg) {
     background-image: url(../img/aerostat_lg.jpg);
      min-height: calc( 100vh - 96px);
-
-     
-    &__text--expiriens {
-    	display: none;
-    	
+     &__container {
+        min-height: calc( 100vh - 96px);      
     }
+
     &__text--expression {
-    	display: block;
-    	position: absolute;
     	left: 8%;
     	top: 338px;
    	}
@@ -110,32 +121,11 @@
     	left: 73%;
     	top: 350px;
     }
-    &__link {
-    	left: 45%;
-    	top: 460px;
+    &__wrap {
+        width: 1200px;
+        bottom: 0px; 
     }
-    &__row {
-    	display: block;
-    	position: relative;
-    	left: 49%;
-    	top: 228px;
-    	.vertical {
-    		width: 2px;
-    		height: 28px;
-    		background: $text-color-w;
-    		position: absolute;
-    		}
-    	.corner {
-    		width: 17px;
-    		height: 17px;
-    		border-bottom: 2px solid $text-color-w;
-    		border-left: 2px solid $text-color-w;
-    		transform: rotate(-45deg);
-    		position: absolute;
-    		top: 8px;
-    		left: -8px;
-    	}
-    }
+
   }
 	&__title {
 		color: $text-color-w;

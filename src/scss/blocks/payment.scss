@@ -51,23 +51,24 @@
 			display: block;
 			padding-left: 25px;
 		}
-		&__items {
-			display: inline-block;
-		}
-		&__link {
+		.payment-menu__list li {
+			background: $background-color-pink;
 			color: $text-color-ad;
-			background-color: $background-color-pink;
+			text-align: center;
 			padding: 13px;
 			margin-right: 12px;
 			font-size: $font-size +4px; 
-			&--active {
-				background-color: $background-color-red;
-			}
+			display: inline-block;
 		}
-		&__link:active {
-			background-color: $background-color-red;
+		.payment-menu__list li:not(.active) {
+			cursor: pointer;
 		}
-
+		.payment-menu__list .active {
+			background: $background-color-red;
+		}
+		 .active {
+			 background-color: $background-color-red;
+		 }
 		}
 	.description {
 		display: none;
@@ -75,8 +76,7 @@
 	.description.active {
 		display: block;
 	}
-
-	}
+}
 	@media (min-width: $screen-lg) {
 		&__container {
 			width: 60%;

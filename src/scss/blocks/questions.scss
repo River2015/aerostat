@@ -102,3 +102,13 @@
 	width: 40%;
 }
 }
+.container-wrap {
+	@media (min-width: $screen-xs) {
+		//display: none;
+	}
+	@media (min-width: $screen-lg) {
+		display: block;
+		margin: 0 auto;
+		width: 1200px;
+	}
+}

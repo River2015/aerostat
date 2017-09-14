@@ -1,3 +1,7 @@
+* {
+	margin: 0;
+	padding: 0;
+}
 body {
   min-width: 320px;
   margin: 0;
@@ -33,6 +37,8 @@ h2 {
 }
 .title--middle {
 	text-align: center;	
+	width: 330px;
+	margin: 60px auto 50px auto;
 }
 h2:after {
 	content: '';
@@ -47,6 +53,6 @@ h2:after {
 	}
 
 .title--middle:after {
-	left: 46%;
+	left: 40%;
     top: 44px;
 }
