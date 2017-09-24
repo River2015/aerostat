@@ -1,11 +1,12 @@
 $(document).ready(function(){
   
+
   $("a").click(function(){
     var elementClick = $(this).attr("href");
-    var destination = $(elementClick).offset().top;
-    $('html, body').animate({ scrollTop: destination }, 900);
-    return false;
-    });
+     var destination = $(elementClick).offset().top;
+     $('html, body').animate({ scrollTop: destination }, 900);
+     return false;
+  });
 
 	$( ".button-cross" ).hide();
 	$( ".hamburger-menu" ).hide();
@@ -23,7 +24,7 @@ $(document).ready(function(){
 	});
 	});
 
-	$('.ananas').slick({
+	$('#ananas').slick({
    slidesToShow: 4,
    infinite: true,
    autoplay: true,
@@ -33,12 +34,12 @@ $(document).ready(function(){
       breakpoint: 1200,
       settings: {
         
-        //centerMode: false,
-        //centerPadding: '0px',
+                    //centerMode: false,
+                    //centerPadding: '0px',
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
-        autoplay: false,
+        autoplay: true,
         arrows: true,
       }
     }
@@ -151,7 +152,7 @@ if (window.matchMedia("(min-width: 768px)").matches) {
   }
     accordion();
 
-$('.briliant').slick({
+$('#briliant').slick({
    slidesToShow: 2,
    infinite: true,
    autoplay: true,
@@ -161,27 +162,27 @@ $('.briliant').slick({
       breakpoint: 1200,
       settings: {
         arrows: true,
-        //prevArrow: '<div class="slick-prevv"></div>',
+                //prevArrow: '<div class="slick-prevv"></div>',
 
-       // nextArrow: '<div class="slick-nextv"></div>'
-        //centerMode: false,
-        //centerPadding: '0px',
+               // nextArrow: '<div class="slick-nextv"></div>'
+                //centerMode: false,
+                //centerPadding: '0px',
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
-        autoplay: false
+        //autoplay: false
       }
-    },
-    // {
-    //   breakpoint: 768,
-    //   settings: {
-    //     arrows: true,
-    //     centerMode: false,
-    //     centerPadding: '0px',
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1
-    //   }
-    // }   
+    }
+                      // {
+                      //   breakpoint: 768,
+                      //   settings: {
+                      //     arrows: true,
+                      //     centerMode: false,
+                      //     centerPadding: '0px',
+                      //     slidesToShow: 1,
+                      //     slidesToScroll: 1
+                      //   }
+                      // }   
    ]
       });
 
