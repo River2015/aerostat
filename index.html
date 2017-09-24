@@ -74,20 +74,25 @@
  </header>
   <section class="promo">
     <div class="aerostat">
-      <div class="container">
+      <div class="container aerostat__container">
+        <div class="wrapper">
         <h1 class="aerostat__title title">Организация полетов на воздушных шарах</h1>
-        <p class="aerostat__text aerostat__text--expiriens">Восхитительный опыт</p>
+        
         <p class="aerostat__text aerostat__text--expression">Удивительный опыт</p>
         <p class="aerostat__text aerostat__text--excursion">Увлекательная экскурсия</p>
         <p class="aerostat__text aerostat__text--gift">Запоминающейся подарок</p>
         <p class="aerostat__text aerostat__text--walk">Романтическая прогулка</p>
-        <a href="#about" class="aerostat__link">Подробнее</a>
-        <a href="#about" class="aerostat__down">
-          <div class="aerostat__row">
-            <div class="vertical"></div>
-            <div class="corner"></div>
-          </div></a>
-      </div>
+        </div>
+       <div class="aerostat__wrap">
+          <div class="aerostat__inner"><a href="#about" class="aerostat__link">Подробнее</a></div>
+         <a href="#about" class="aerostat__down">
+            <div class="aerostat__row"> 
+              <div class="vertical"></div>
+              <div class="corner"></div> 
+            </div></a>
+    </div>  
+    </div>
+   
     </div>
     <div class="advantages">
       <div class="container">
@@ -156,11 +161,12 @@
     </div>
   </section>
   <section class="flights">
-    <div class="container">
+    <div class="flights__container">
       <h2 id='flights' class="flights__title title title--middle">Как проходят полеты</h2>
     </div>
     <div class="flights__wrapper">
-      <div class="flights__inner">
+      <div class="flights__inner">  
+      <div class="flights__wrap">
         <ul class="flights-menu__list">
           <li class="flights-menu__item"><p class="flights-item flights-item--first">Взлет</p></li>
           <li class="flights-menu__item"><p class="flights-item flights-item--second">Набираем высоту</p></li>
@@ -168,6 +174,7 @@
           <li class="flights-menu__item"><p class="flights-item flights-item--fouth">Снижаемся</p></li>
           <li class="flights-menu__item"><p class="flights-item flights-item--fifth">Cадимся</p></li>
         </ul>
+        </div>
         
         
        
@@ -220,15 +227,28 @@
         </form>
       </div>
     </div>
-  </section>  
+  </section> 
+  <div class="container-wrap">  
   <section class="payment">
     <div class="payment__container">
       <h2 class="payment__title title title--left">Способы оплаты</h2>
       <nav class="payment-menu">
         <ul class="payment-menu__list">
-          <li class="payment-menu__items"><p class="payment-menu__link payment-menu__link--active">Наличными</p></li>
-          <li class="payment-menu__items"><p class="payment-menu__link">Курьером</p></li>
-          <li class="payment-menu__items"><p class="payment-menu__link">Картой</p></li>
+          <li class="payment-menu__items">
+            <!-- <p class="payment-menu__link payment-menu__link--active"> -->
+            Наличными
+            <!-- </p> -->
+            </li>
+          <li class="payment-menu__items">
+          <!-- <p class="payment-menu__link"> -->
+          Курьером
+          <!-- </p> -->
+          </li>
+          <li class="payment-menu__items">
+          <!-- <p class="payment-menu__link"> -->
+          Картой
+          <!-- </p> -->
+          </li>
         </ul>
       </nav>
       <div class="description active">
@@ -267,8 +287,9 @@
   <div class="inner"> Это в тысячу раз лучше шоколада</div>
 </div>
       </div>
-    
+   
   </section>
+  </div>
   <section class="info">
     <div class="container info__container">
       <div class="info-item">
